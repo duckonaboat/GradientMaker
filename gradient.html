@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Gradient Maker</title>
+</head>
+<body>
+<!-- <button onclick="rainbow();"> fade </button>
+<button onclick="randomGradient();"> random </button> 
+<button onclick="coloringg();"> test </button>
+<button onclick="filterColors();">Filter</button>
+Filter gradient colors-->
+
+<button onclick="addElement();"> Add </button>
+Box with random gradient
+<br>
+<button onclick="SpamElement();"> Spam </button>
+100 Boxes
+<br>
+<button onclick="ClearElement();"> Clear </button>
+Clear boxes
+<br>
+
+<!-- <div id="settings">
+    <label> Settings </label>
+    <br>
+    <input type="checkbox"> 
+    <input type="checkbox">
+    <input type="checkbox">
+</div> -->
+
+<br>
+<div id="boxcount"> Boxes: None </div>
+
+<div id="mainBody">
+    <div id="colorpicker">
+        <span style="background-color: orange; border-radius: 3px; display: flex;">
+        <table>
+            <tr>
+              <th>RGB 1</th>
+              <th>RGB 2</th>
+            </tr>
+            <tr>
+              <td id="REDone">RED</td>
+              <td id="REDtwo">RED</td>
+            </tr>
+            <tr>
+              <td id="GREENone">GREEN</td>
+              <td id="GREENtwo">GREEN</td>
+            </tr>
+            <tr>
+              <td id="BLUEone">BLUE</td>
+              <td id="BLUEtwo">BLUE</td>
+            </tr>
+          </table>
+          
+          <table>
+            <tr>
+              <th>HEX 1</th>
+              <th>HEX 2</th>
+            </tr>
+            <tr>
+              <td>Value 1</td>
+              <td>Value 1</td>
+            </tr>
+            <tr>
+              <td>Value 2</td>
+              <td>Value 2</td>
+            </tr>
+          </table>
+        </span>
+    </div>
+    <!-- <div id="gradientBody">
+
+    </div> -->
+
+
+
+    <!-- <label id="hexValue"> Hex Value </label>
+    <label id="rgbValue"> RGB Value </label> -->
+</div>
+
+
+<br>
+
+
+
+
+
+
+<div id="colorbox"> 
+    color box
+</div>
+
+
+
+<div>
+    <label> color 1</label>
+    <input id="rgb1" placeholder="rgb1" maxlength="3">
+    <input id="rgb2" placeholder="rgb2" maxlength="3">
+    <input id="rgb3" placeholder="rgb3" maxlength="3">
+    <br>
+    <label> color 2</label>
+    <input id="rgb4" placeholder="rgb1" maxlength="3">
+    <input id="rgb5" placeholder="rgb2" maxlength="3">
+    <input id="rgb6" placeholder="rgb3" maxlength="3">
+</div> 
+<br>
+<button onclick="cusGradient();">custom gradient</button>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#mainBody {
+    display: flex;
+    margin: 1rem;
+    width: fit-content;
+    border: 1px solid white;
+    flex-wrap: wrap;
+}
+
+
+#gradientBody {
+    margin: 5px;
+    border: 1px solid white;
+    padding: 5rem;
+    background-image: linear-gradient(rgb(1,1,1), rgb(2,2,2));
+    transition: 1s;
+    
+}
+
+input {
+    width: 2rem;
+    
+}
+
+#colorbox {
+    border: 1px solid white;
+    padding: 1rem;
+    margin: 1rem;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    background-image: linear-gradient();
+}
+
+
+/* animation 1 */
+
+/* @keyframes slidein {
+    from {
+      background-image: linear-gradient(red, blue);
+
+    }
+  
+    to {
+        background-image: linear-gradient(blue, red);
+    }
+  }
+
+  #seizuredog {
+    padding: 20px;
+    border: 1px solid white;
+    background-image: linear-gradient(red, blue);
+    width: fit-content;
+    margin: 1rem;
+    animation-name: slidein;
+    animation-duration: 3s;
+    transition: 3s;
+  } */
+
+  #settings {
+    display: flex;
+    border: 1px solid white;
+  }
+
+  #colorpicker {
+    border: 1px solid white;
+    padding: 50px;
+    width: 100%;
+    display: none;
+
+  }
+
+  table * {
+    border: 1px solid white;
+  }
+
+  
+ 
