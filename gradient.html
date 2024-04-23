@@ -22,6 +22,7 @@ Box with random gradient
 <button onclick="ClearElement();"> Clear </button>
 Clear boxes
 <br>
+<input id="gradientAngle"> Gradient Angle (Degrees)
 
 <!-- <div id="settings">
     <label> Settings </label>
@@ -32,52 +33,24 @@ Clear boxes
 </div> -->
 
 <br>
-<div id="boxcount"> Boxes: None </div>
-
+<div id="boxcount"> Boxes: 0 </div>
 <div id="mainBody">
+
     <div id="colorpicker">
-        <span style="background-color: orange; border-radius: 3px; display: flex;">
-        <table>
-            <tr>
-              <th>RGB 1</th>
-              <th>RGB 2</th>
-            </tr>
-            <tr>
-              <td id="REDone">RED</td>
-              <td id="REDtwo">RED</td>
-            </tr>
-            <tr>
-              <td id="GREENone">GREEN</td>
-              <td id="GREENtwo">GREEN</td>
-            </tr>
-            <tr>
-              <td id="BLUEone">BLUE</td>
-              <td id="BLUEtwo">BLUE</td>
-            </tr>
-          </table>
-          
+        <span style="background-color: rgba(0, 0, 0, 0.785); border-radius: 3px; display: flex;">
           <table>
             <tr>
               <th>HEX 1</th>
               <th>HEX 2</th>
             </tr>
             <tr>
-              <td>Value 1</td>
-              <td>Value 1</td>
-            </tr>
-            <tr>
-              <td>Value 2</td>
-              <td>Value 2</td>
+              <td id="HexOne1">Value 1</td>
+              <td id="HexOne2">Value 2</td>
             </tr>
           </table>
         </span>
     </div>
-    <!-- <div id="gradientBody">
-
-    </div> -->
-
-
-
+    
     <!-- <label id="hexValue"> Hex Value </label>
     <label id="rgbValue"> RGB Value </label> -->
 </div>
@@ -89,28 +62,31 @@ Clear boxes
 
 
 
-
-<div id="colorbox"> 
-    color box
-</div>
-
-
-
-<div>
-    <label> color 1</label>
-    <input id="rgb1" placeholder="rgb1" maxlength="3">
-    <input id="rgb2" placeholder="rgb2" maxlength="3">
-    <input id="rgb3" placeholder="rgb3" maxlength="3">
+<div style="display: none;">
+    
+    <div id="colorbox">
+        color box
+    </div>
+    
+    
+    
+    <div>
+        <label> color 1</label>
+        <input id="rgb1" placeholder="rgb1" maxlength="3">
+        <input id="rgb2" placeholder="rgb2" maxlength="3">
+        <input id="rgb3" placeholder="rgb3" maxlength="3">
+        <br>
+        <label> color 2</label>
+        <input id="rgb4" placeholder="rgb1" maxlength="3">
+        <input id="rgb5" placeholder="rgb2" maxlength="3">
+        <input id="rgb6" placeholder="rgb3" maxlength="3">
+    </div>
     <br>
-    <label> color 2</label>
-    <input id="rgb4" placeholder="rgb1" maxlength="3">
-    <input id="rgb5" placeholder="rgb2" maxlength="3">
-    <input id="rgb6" placeholder="rgb3" maxlength="3">
-</div> 
-<br>
-<button onclick="cusGradient();">custom gradient</button>
-
-
+    <button onclick="cusGradient();">custom gradient</button>
+    
+</div>
+<!-- <div id="gradientBody">
+</div> -->
 
 
 <script src="script.js"></script>
